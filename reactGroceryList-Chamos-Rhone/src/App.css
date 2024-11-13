@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f9f3f6; 
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.App-header {
+  background-color: #f7c6d4; 
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+}
+
+.App-header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.item h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+
+button, .add-to-cart-button {
+  background-color: #f7c6d4; 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+button:hover, .add-to-cart-button:hover {
+  background-color: #f6a1c0; 
+}
+
+button:active, .add-to-cart-button:active {
+  transform: scale(0.98);
+}
+
+button:disabled, .add-to-cart-button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.cart {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.cart h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+input[type="number"] {
+  padding: 10px;
+  border: 2px solid #f0b7c1; 
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 15px;
+}
+
+input[type="number"]:focus {
+  border-color: #f7c6d4;
+}
+
+
+.App-footer {
+  background-color: #f7c6d4;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px 30px 0 0;
+  margin-top: 50px;
+}
+
+.App-footer p {
+  font-size: 1rem;
+  font-weight: 300;
+}
